@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>Transpose App</title>
+  <link rel="stylesheet" href="css/framework7.ios.min.css">
+  <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+  <!-- Path to your custom app styles-->
+  <link rel="stylesheet" href="css/my-app.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+ <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal bg-yellow">
+      <div class="content-block">
+        <!--MENU-->
+              <a href="chords.html" class="item-link">
+                <div class="button button-fill color-red">Chords Chart</div>
+            <br>
+          
+              <a href="about.html" class="item-link">
+                <div class="button button-fill">About</div>
+        </div>
+      </div>
+    </div>
+    
+
+  <div class="views">
+    <div class="view view-main">
+      <div class="navbar bg-blue">
+        <div class="navbar-inner">
+          
+          <div class="right">
+            <a href="#" class="link icon-only open-panel"><i class="icon icon-bars color-black"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pages navbar-through toolbar-through">
+        <div data-page="index" class="page">
+          <div class="page-content">
+            <div class="content-block-title color-blue"><h2>Chords</h2></div>
+            <div class="content-block">
+              <input type="text" placeholder="input chords here" id="src_id" style="width: 100%; font-size: 30px; text-align: center;">
+            </div>
+
+            <div class="content-block-title color-blue"><h2>Transpose</h2></div>
+            <div class="content-block">
+              <pre id="dst_id" data-distance="50" class="page-content infinite-scroll" style="font-size: 30px; text-align: center;"></pre>
+            </div>
+
+            <div class="content-block">
+              <div class="buttons-row">
+                <a href="#" class="button button-big button-fill button-raised color-red" onclick="shiftMinus('src_id','dst_id')">Transpose -1</a>
+                <a href="#" class="button button-big button-fill button-raised color-yellow" onclick="shiftPlus('src_id','dst_id')">Transpose +1</a>
+              </div>
+            </div>
+
+            <div class="content-block">
+              <a href="#" class="button button-big button-fill button-raised color-gray" onclick="window.location.reload()">Refresh</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<script>
+  function play(element){
+       var audio = document.getElementById(element);
+       audio.play();
+                 }
+</script>
+
+
+
+  <script crossorigin type="text/javascript" src="js/react.min.js"></script>
+  <script crossorigin type="text/javascript" src="js/react-dom.min.js"></script>
+  <script crossorigin type="text/javascript" src="js/babel.min.js"></script>
+
+  <script crossorigin type="text/javascript" src="js/chords.js"></script>
+  <script crossorigin type="text/javascript" src="js/index.js"></script>
+  <!-- Path to Framework7 Library JS-->
+  <script type="text/javascript" src="js/framework7.min.js"></script>
+  <!-- Path to your app js-->
+  <script type="text/javascript" src="js/my-app.js"></script>
+
+
+</body>
+</html>
