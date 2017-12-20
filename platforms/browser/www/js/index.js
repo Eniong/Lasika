@@ -1,5 +1,5 @@
 
-         let val = 0;
+        val = 0;
 
         function shift(src_id, dst_id, from, to) {
             val = 0;

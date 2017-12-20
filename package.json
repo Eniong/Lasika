@@ -11,14 +11,18 @@
   "license": "Apache-2.0",
   "cordova": {
     "plugins": {
-      "cordova-plugin-whitelist": {}
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-websocket": {}
     },
     "platforms": [
-      "android"
+      "android",
+      "ios"
     ]
   },
   "dependencies": {
     "cordova-android": "^6.3.0",
+    "cordova-ios": "^4.5.4",
+    "cordova-plugin-websocket": "^0.12.2",
     "cordova-plugin-whitelist": "1"
   }
 }

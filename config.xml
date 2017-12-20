@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.cordova.hellocordova" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>HelloCordova</name>
+<widget id="io.cordova.hellocordova" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Transpose</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+       Final Project for Sir Rufo Gabrillo Jr.
     </description>
     <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+        cloud team
     </author>
     <content src="index.html" />
     <access origin="*" />
@@ -22,6 +22,8 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
-    <engine name="android" spec="^6.3.0" />
+    <engine name="android" spec="^5.0.0" />
+    <engine name="ios" spec="^4.5.4" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
+    <plugin name="cordova-plugin-websocket" spec="^0.12.2" />
 </widget>
